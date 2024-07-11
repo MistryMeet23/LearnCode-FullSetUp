@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ScreenBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bg_img"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fc" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bg_img"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:elevation="12dp"
+            app:cardCornerRadius="12dp"
+            tools:targetApi="lollipop">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:id="@+id/contact"
+                    style="@style/TextBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:text="Get In Touch"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/line_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/contact"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="36dp"
+                    android:layout_marginRight="36dp"
+                    android:background="@color/text" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_view">
+
+                    <RelativeLayout
+                        android:id="@+id/callsec"
+                        android:layout_width="360dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="left|center"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:id="@+id/numround"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:src="@drawable/round"
+                            android:textColor="@color/text" />
+
+                        <ImageView
+                            android:id="@+id/numimg"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:layout_alignEnd="@+id/numround"
+                            android:layout_alignRight="@+id/numround"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:src="@drawable/call"
+                            android:textColor="@color/text" />
+
+                        <TextView
+                            android:id="@+id/num"
+                            style="@style/TextBackground"
+                            android:layout_width="200dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_margin="10sp"
+                            android:layout_toEndOf="@+id/numround"
+                            android:layout_toRightOf="@+id/numround"
+                            android:fontFamily="@font/inter_semibold"
+                            android:gravity="left|center"
+                            android:text="+91 6353918120"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/feedback"
+                        android:layout_width="360dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/callsec"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="left|center"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:id="@+id/mailround"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:src="@drawable/round"
+                            android:textColor="@color/text" />
+
+                        <ImageView
+                            android:id="@+id/mailimg"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:layout_alignEnd="@+id/mailround"
+                            android:layout_alignRight="@+id/mailround"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:src="@drawable/email"
+                            android:textColor="@color/text" />
+
+                        <TextView
+                            android:id="@+id/mail"
+                            style="@style/TextBackground"
+                            android:layout_width="300dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginEnd="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_marginBottom="10sp"
+                            android:layout_toEndOf="@+id/mailround"
+                            android:layout_toRightOf="@+id/mailround"
+                            android:fontFamily="@font/inter_semibold"
+                            android:gravity="left|center"
+                            android:text="mistrymeet6338@gmail.com"
+                            android:textSize="16sp"
+                            tools:ignore="RtlHardcoded" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/linkdin"
+                        android:layout_width="360dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/feedback"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="left|center"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:id="@+id/linkround"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:src="@drawable/round"
+                            android:textColor="@color/text" />
+
+                        <ImageView
+                            android:id="@+id/linkimg"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignEnd="@+id/linkround"
+                            android:layout_alignRight="@+id/linkround"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginBottom="1dp"
+                            android:gravity="center"
+                            android:src="@drawable/linkedin"
+                            android:textColor="@color/text" />
+
+                        <TextView
+                            android:id="@+id/link"
+                            style="@style/TextBackground"
+                            android:layout_width="300dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginEnd="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_marginBottom="10sp"
+                            android:layout_toEndOf="@+id/linkround"
+                            android:layout_toRightOf="@+id/linkround"
+                            android:fontFamily="@font/inter_semibold"
+                            android:gravity="left|center"
+                            android:text="Meet Mistry"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/instagram"
+                        android:layout_width="360dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/linkdin"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="left|center"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:id="@+id/instaround"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:src="@drawable/round"
+                            android:textColor="@color/text" />
+
+                        <ImageView
+                            android:id="@+id/instaimg"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignEnd="@+id/instaround"
+                            android:layout_alignRight="@+id/instaround"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginBottom="1dp"
+                            android:gravity="center"
+                            android:src="@drawable/instagram"
+                            android:textColor="@color/text" />
+
+                        <TextView
+                            android:id="@+id/insta"
+                            style="@style/TextBackground"
+                            android:layout_width="300dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginEnd="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_marginBottom="10sp"
+                            android:layout_toEndOf="@+id/instaround"
+                            android:layout_toRightOf="@+id/instaround"
+                            android:fontFamily="@font/inter_semibold"
+                            android:gravity="left|center"
+                            android:text="meet__2309"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/youtube"
+                        android:layout_width="360dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/instagram"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="left|center"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:id="@+id/ytround"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:src="@drawable/round"
+                            android:textColor="@color/text" />
+
+                        <ImageView
+                            android:id="@+id/ytimg"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignEnd="@+id/ytround"
+                            android:layout_alignRight="@+id/ytround"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginBottom="1dp"
+                            android:gravity="center"
+                            android:src="@drawable/youtube"
+                            android:textColor="@color/text" />
+
+                        <TextView
+                            android:id="@+id/yt"
+                            style="@style/TextBackground"
+                            android:layout_width="300dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginEnd="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_marginBottom="10sp"
+                            android:layout_toEndOf="@+id/ytround"
+                            android:layout_toRightOf="@+id/ytround"
+                            android:fontFamily="@font/inter_semibold"
+                            android:gravity="left|center"
+                            android:text="meetmistry23"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LearnCode" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/text</item>
+        <item name="colorPrimaryDark">@color/background</item>
+        <item name="colorAccent">@color/white</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ScreenBackground">
+        <item name="android:background">@color/background</item>
+    </style>
+
+    <style name="CardBackground">
+        <item name="android:background">@color/darkgrey</item>
+    </style>
+
+    <style name="TextBackground">
+        <item name="android:textColor">@color/Basecolor</item>
+    </style>
+
+</resources>

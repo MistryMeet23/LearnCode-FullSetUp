@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">LearnCode</string>
+
+    <string name="splash_title">L e a r n C o d e</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="video">Video</string>
+    <string name="working">Working</string>
+    <string name="don_t_have_an_account_yet_sign_up">Don\'t have an account yet? Sign Up</string>
+    <string name="get_started">Get Started</string>
+    <string name="already_have_an_account">Already have an account?</string>
+
+    <string name="web_client_id">765453933965-nrkt9o7k5fhlnskeoo3i2lh8938aht24.apps.googleusercontent.com</string>
+    <string name="create_account">Create account</string>
+
+    <!--On boarding strings-->
+    <string name="title1">Your journey will be on this way!</string>
+    <string name="title2">Share your passion with the world</string>
+    <string name="title3">Explore and unlock your hidden skill !</string>
+
+    <string name="subtitle1">Welcome to the family.\n Connect people around the world with your skill.</string>
+    <string name="subtitle2">Matches based on common interests and language.</string>
+    <string name="subtitle3">Take the best programming knowledge.</string>
+</resources>
